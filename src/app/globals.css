@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode (default) */
+:root {
+  --foreground-rgb: 0, 0, 0; /* Black text for light mode */
+  --background-start-rgb: 255, 255, 255; /* White background start for light mode */
+  --background-end-rgb: 214, 219, 220; /* Light grey background end for light mode */
+}
+
+/* Dark mode based on user preference */
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --foreground-rgb: 255, 255, 255; !* White text for dark mode *!*/
+/*    --background-start-rgb: 0, 0, 0; !* Black background start for dark mode *!*/
+/*    --background-end-rgb: 0, 0, 0; !* Black background end for dark mode *!*/
+/*  }*/
+/*}*/
+
+body {
+  /*color: rgb(var(--foreground-rgb));*/
+  /*background: linear-gradient(*/
+  /*        to bottom,*/
+  /*        transparent,*/
+  /*        rgb(var(--background-end-rgb))*/
+  /*)*/
+  /*rgb(var(--background-start-rgb));*/
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
